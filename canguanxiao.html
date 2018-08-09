@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参观校园</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js" rel="script"></script>
+    <style>
+
+
+        #menu-nav{
+            background-color: white;
+            margin-bottom: 50px;
+        }
+      #menu-nav a{
+          color: #000;
+      }
+
+        #menu-nav li:hover{
+          border-top: 3px solid #7A0000;
+            box-sizing: border-box;
+        }
+        #shi a{
+            background-color: white;
+        }
+        #gaikuan{
+            margin-top: 80px;
+        }
+        .article_cn{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .article_cn .biaoti{
+            margin: 0 0 30px 10px;
+        }
+        .clear:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .article_cn .biaoti span{
+            float: left;
+            width: 120px;
+        }
+        .article_cn .biaoti h3{
+            font-weight: 400;
+            line-height:61px;
+            color: #565656;
+            vertical-align: middle;
+            border-bottom: 2.4px solid rgb(155,0,0);
+            font-size: 24px;
+            float: left;
+            padding: 0 27px;
+            box-sizing: content-box;
+            display: block;
+            margin: 0;
+        }
+        .article_cn p{
+            text-indent: 2rem;
+            padding: 0.75em 0;
+            font-size: 1.5rem;
+            line-height: 1.75em;
+            margin-left: 10px;
+            font-family: inherit;
+        }
+
+        /*left_Nav stye*/
+                #example-two{
+            line-height: 20px;
+            margin: 0 0 0 10px;
+            padding: 0;
+            position: relative;
+            width:270px;
+            display: block;
+            box-sizing: content-box;
+        }
+        .yahei{
+            margin: 20px 0 0 0;
+            list-style-type: none;
+        }
+        #example-two .yahei li{
+            line-height:22px;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: list-item;
+            box-sizing: content-box;
+            background-color: rgb(245,245,245);
+            border: 0.8px solid rgb(190,190,190);
+        }
+        #example-two .yahei li a{
+            line-height:22px;
+            font-size: 18px;
+            margin: 0;
+            font-weight: 400;
+            text-decoration: none;
+
+            padding: 18px 0px 18px 22px;
+            position: relative;
+            display: list-item;
+            box-sizing: content-box;
+            background-color: rgb(245,245,245);
+            border: 1px solid rgb(190,190,190);
+            color: rgb(68,68,68);
+        }
+         #example-two .yahei li a:hover{
+            color: #7A0000;
+        }
+         #example-two img {
+             height: 360px;
+             margin: 30px 0 0 0;
+             padding: 0;
+             width: 270px;
+             box-sizing: content-box;
+             position: static;
+             display: block;
+         }
+         .yu_you{
+             display: block;
+             float: left;
+             margin: 0 0 0 70px;
+             padding: 0;
+         }
+         #tuan{
+            color: rgb(86, 86, 86);
+            font-family: "Microsoft Yahei", Arial;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 35px;
+             margin: 15px 0 40px 0;
+            padding: 0;
+            text-align: center;
+             box-sizing: content-box;
+         }
+         .yu_you p{
+             display: block;
+             box-sizing: content-box;
+         }
+         .yu_you p img{
+             margin: 0;
+             max-width: 100%;
+             padding: 0;
+             vertical-align: bottom;
+             display: inline;
+             line-height: 20px;
+             box-sizing: content-box;
+         }
+
+
+
+
+        @media(max-width:1000px){
+            #tuan{
+                font-size: 24px;
+
+            }
+            .article_cn{
+                float: none;
+            }
+             .article_cn .biaoti span{
+            float: left;
+            width: 120px;
+        }
+            .article_cn .biaoti h3{
+                font-weight: 400;
+                line-height:61px;
+                color: #565656;
+                vertical-align: middle;
+                border-bottom: 2.4px solid rgb(155,0,0);
+                font-size: 18px;
+                float: left;
+                padding: 0 27px 0 20px;
+                box-sizing: content-box;
+                display: block;
+                margin: 0;
+            }
+            #example-two{
+            line-height: 20px;
+            margin: 0 0 0 10px;
+            padding: 0;
+            position: relative;
+            width:200px;
+            display: block;
+            box-sizing: content-box;
+        }
+            #example-two img {
+             height: 360px;
+             margin: 30px 0 0 0;
+             padding: 0;
+             width: 200px;
+             box-sizing: content-box;
+             position: static;
+             display: block;
+         }
+            .yu_you{
+                width:60%;
+            }
+        }
+         @media(max-width:750px){
+             #example-two{
+                 display: none;
+
+             }
+             .yu_you{
+                 width:80%;
+             }
+         }
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+<!--top nav content-->
+<div class="navbar  navbar-fixed-top navbar-inverse" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">北大概况</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="#">北大简介</a></li>
+                <li><a href="#" data-toggle="modal" >历任领导</a></li>
+                <li class="dropdown" id="shi">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">组织机构<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" data-tab="tab-chrome">学部与院系</a></li>
+                        <li><a href="#" data-tab="tab-firefox">管理服务</a></li>
+                        <li><a href="#" data-tab="tab-safari">研发中心</a></li>
+                        <li><a href="#" data-tab="tab-opera">医学部</a></li>
+                        <li><a href="#" data-tab="tab-ie">产学研</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal">历史名人</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">绿色校园</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!--top nav end-->
+<!--main content-->
+<div class="container" id="gaikuan">
+    <div class="row">
+        <div class="col-md-4  col-sm-3">
+            <section class="article_cn">
+                <div class="biaoti clear"><span><img src="images/guan1.jpg" ></span><h3>预约参观</h3></div>
+            </section>
+            <section class=" nav nav-s leftNav sidebar " id="example-two">
+					<ul class="nav nav-sidebar yahei ">
+                        <li id="id_swap_1" style="border-bottom-style:none" class="current "><a class="cls_swap" href="#">团队预约参观</a></li>
+                        <li style="border-bottom-style:none"><a href="https://visitor.pku.edu.cn/visitor/modules/tourist/indexW.html#/touristWeb">个人预约参观</a></li>
+
+
+						<li id="id_swap_2" style="border-bottom-style:none"><a class="cls_swap" href="#">多辆机动车、大轿车预约</a></li>
+						<li id="id_swap_3" style="border-bottom-style:none"><a class="cls_swap" href="#">车辆因公入校预约</a></li>
+						<li id="id_swap_4"><a href="http://bwb.pku.edu.cn/">通知通告</a></li>
+					</ul>
+                <img src="images/xiao4.jpg"/>
+				</section>
+
+        </div>
+        <div class="col-md-7 youtu">
+            <div class="yu_you">
+                <h2 id="tuan">团队预约参观</h2>
+                <p id="tuantu"><img src="images/canguantu.jpg"/> </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--green company content-->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">绿色校园</h4>
+                </div>
+                <div class="modal-body">
+                    <p>“绿色校园”是指在实现其基本教育功能的基础上，以可持续发展思想为指导，在学校全面的日常管理工作中纳入有益于环境的管理措施，
+                        并持续不断地改进，充分利用学校内外的一切资源和机会全面提高师生环境素养的学校。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--green company end-->
+</body>
+</html>

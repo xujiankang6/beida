@@ -1,0 +1,217 @@
+/*general style*/
+.clear:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: #7A0000;
+}
+.waiba44444{
+    width:100%;
+    background:url("../images/section4背景.jpg") repeat-y;
+    height: 100%;
+
+}
+.fw_wap{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 43px auto 0  auto;
+    overflow: hidden;
+    padding-bottom: 42px;
+    width: 1000px;
+    box-sizing: content-box;
+    display: block;
+    position: static;
+
+    z-index: auto;
+
+    
+}
+.fw_wap ul{
+    font-size: 12px;
+    font-weight:400;
+    line-height: 20px;
+    list-style-type: none;
+    box-sizing: content-box;
+    display: block;
+    z-index: auto;
+    margin: 0;
+    padding: 0;
+}
+.fw_wap ul li{
+    display: list-item;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    z-index: auto;
+    height: 126px;
+    list-style-type: none;
+    margin-right: 53px;
+    margin-top: 47px;
+    padding: 8px;
+    width: 194px;
+    background-color: white;
+    border-image-repeat: stretch stretch;
+
+}
+.fw_wap ul li:nth-child(8),.fw_wap ul li:nth-child(4){
+    display: list-item;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    z-index: auto;
+    height: 126px;
+    list-style-type: none;
+    margin-right: 0;
+    padding: 8px;
+    width: 194px;
+    background-color: white;
+    border-image-repeat: stretch stretch;
+    margin-top: 47px;
+}
+.fw_wap ul li a {
+    box-sizing: content-box;
+    display: inline;
+    line-height: 20px;
+    position: static;
+}
+.fw_wap ul li a img{
+    box-sizing: content-box;
+    display: inline;
+    line-height: 20px;
+    position: static;
+    max-width: 100%;
+    z-index: auto;
+    margin: 0;
+    vertical-align: bottom;
+    width: 194px;
+}
+.fw_wap ul li .cover1{
+    display: block;
+    box-sizing: content-box;
+    position: static;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fw_wap ul li .cover1 p{
+    display: block;
+    box-sizing: content-box;
+    line-height: 20px;
+    position: absolute;
+    z-index: 1;
+    height: 28px;
+    width:194px;
+    left: 8px;
+    opacity: 0.6;
+    background-color: rgb(123, 67, 102);
+    overflow: hidden;
+    background-origin: padding-box;
+    bottom: 8px;
+
+}
+.fw_wap ul li .cover1 h3{
+    display: block;
+    box-sizing: content-box;
+    line-height: 20px;
+    position: absolute;
+    z-index: 2;
+    height: 28px;
+    left: 8px;
+    opacity: 0.6;
+    background-color: rgb(123, 67, 102);
+    overflow: hidden;
+    bottom: 9px;
+
+
+}
+.fw_wap ul li .cover1 h3 span{
+    box-sizing: content-box;
+    display: block;
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+    height: 21px;
+    padding: 4px 10px 5px 10px;
+    width: 21px;
+    z-index: auto;
+    position: static;
+
+}
+.fw_wap ul li .cover1 h3 span img{
+    box-sizing: content-box;
+    display: inline;
+    line-height: 20px;
+    font-size: 14px;
+    position: static;
+    height: 21px;
+    color: white;
+    padding:0 10px 7px 10px;
+    list-style-type: none;
+    z-index: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+
+
+
+}
+.fw_wap ul li .cover1 h3 a{
+    box-sizing: content-box;
+    display: inline-block;
+    line-height: 30px;
+    position: static;
+    z-index: auto;
+    height: 30px;
+    text-align: center;
+    width:128px;
+    font-size: 14px;
+    color: white;
+}
+@media(max-width: 1000px) {
+    .fw_wap{
+        width:100%;
+    }
+
+    .fw_wap ul li{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-right:3px;
+        float: left;
+        line-height: 20px;
+        position: relative;
+        z-index: auto;
+        height: 126px;
+        list-style-type: none;
+        margin-top: 47px;
+        padding: 8px;
+        width: 194px;
+        background-color: white;
+        border-image-repeat: stretch stretch;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

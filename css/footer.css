@@ -1,0 +1,317 @@
+/*general style*/
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+  -webkit-animation: bugfix infinite 1s; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; }
+}
+
+/*footer_main style*/
+
+.footer_main{
+    display:block;
+    height: 183px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 16px 0;
+    position: relative;
+    width: 100%;
+    background-image: url("../images/footerbeijing.jpg");
+}
+.fot_main{
+    /*width: 1000px;*/
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*footer_left style*/
+.footer_left{
+    line-height: 36px;
+    font-size: 14px;
+    width: 256px;
+    height: 144px;
+    min-width: 256px;
+    box-sizing: content-box;
+    display: block;
+    /*position: static;*/
+    padding-left: 50px;
+    z-index: auto;
+}
+.footer_left a{
+    font-family:"Arial" ;
+    display: inline;
+    box-sizing: content-box;
+    padding: 0 68px 0 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.footer_left a:hover{
+    color: black;
+}
+/*footer_center style*/
+.footer_center{
+
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    display: flex;
+
+
+
+
+}
+.footer_center img{
+    width:172px;
+    height: 48.45px;
+}
+
+/*footer_right style*/
+.footer_right{
+
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.footer_share{
+    font-size: 14px;
+    /*padding-left: 29px;*/
+    /*padding-top: 25px;*/
+    font-weight: 400;
+    width:158px;
+    height: 88px;
+    display: block;
+    /*position: static;*/
+    margin: 0 0;
+
+
+
+}
+.footer_share a{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin: 6px 6px 6px 0;
+    overflow: hidden;
+
+    text-decoration: none;
+    /*text-indent: -1400px;*/
+}
+.footer_share a:nth-child(1){
+    background-image: url("../images/q1.png");
+    width:32px;
+    display: inline-block;
+    height: 32px;
+}
+.footer_share a:nth-child(1):hover{
+    background-image: url("../images/q2.png");
+    width:32px;
+    height: 32px;
+    display:inline-block;
+}
+.footer_share a:nth-child(2){
+    background-image: url("../images/wei1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(2):hover{
+    background-image: url("../images/wei2.png");
+    width:32px;
+    height: 32px;;
+}
+.footer_share a:nth-child(3){
+    background-image: url("../images/tengxun1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(3):hover{
+    background-image: url("../images/tengxun2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(4){
+    background-image: url("../images/tenxunp1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(4):hover{
+    background-image: url("../images/tengxunp2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(5){
+    background-image: url("../images/ren1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(5):hover{
+    background-image: url("../images/ren2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(6){
+    background-image: url("../images/sou1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(6):hover{
+    background-image: url("../images/sou2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(7){
+    background-image: url("../images/dou1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(7):hover{
+    background-image: url("../images/dou2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(8){
+    background-image: url("../images/xinlang1.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+.footer_share a:nth-child(8):hover{
+    background-image: url("../images/xinglang2.png");
+    width:32px;
+    height: 32px;
+    display: block;
+}
+/*min-width:700px*/
+@media(min-width: 700px) {
+.fot_left{
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fot_center{
+    width:33%;
+    display: flex;
+
+
+}
+.fot_right{
+    width:33%;
+    display: flex;
+}
+}
+@media(max-width: 700px) and (min-width: 500px){
+    .fot_left{
+        width:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 3px solid #7A0000;
+
+    }
+    .fot_right{
+        width:50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    .fot_center{
+        display: none;
+
+
+    }
+
+}
+@media (max-width: 500px) {
+
+
+.footer_main{
+    display:block;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 16px 0;
+    width: 100%;
+    background-image: url("../images/footerbeijing.jpg");
+}
+.fot_main{
+    /*width: 1000px;*/
+    display: flex;
+    width:100%;
+    height: 100%;
+    flex-direction: column;
+}
+.fot_center{
+    width:100%;
+    height: 100%;
+    flex: auto;
+}
+.fot_right{
+    width:100%;
+    height: 100%;
+}
+.fot_left{
+    display: none;
+}
+
+
+/*footer_center style*/
+.footer_center{
+
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+.footer_center img{
+    width:60%;
+    height: 60%;
+}
+
+/*footer_right style*/
+.footer_right{
+
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+}

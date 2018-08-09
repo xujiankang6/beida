@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>门户</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,
+    maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg"/>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/menhu.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+</head>
+<script type="text/javascript">
+   $(document).ready(function () {
+       $(".tijiao").click(function () {
+         var value=$("#code").val();
+         var value1=$("#pwd").val();
+         if(value.length==0){
+             alert("账号不能为空，请重新输入...")
+         }
+         if(value1.length==0){
+             alert("密码不能为空，请重新输入...")
+         }
+       })
+   })
+</script>
+
+<body>
+<div class="main">
+    <div class="left"></div>
+    <div class="middle">
+        <div class="top">
+            <div class="img1">
+                <img src="images/menhulogo.png"/>
+            </div>
+        </div>
+        <div class="center">
+            <div id="beijing"></div>
+<form action="zhengheshouye.html">
+            <div class="sing_col_panel">
+                    <div class="row">
+                        <input type="text" name="userName" placeholder="学号/职工号/北大邮箱" id="code"  style="color: black">
+                    </div>
+                    <div class="row" id="paddwd_area">
+                        <input type="password" id="pwd" placeholder="密码"  style="color: black">
+                        <a class="pad-tip" href="#">忘记密码</a>
+                    </div>
+                    <div class="jizhumima">
+                            <input id="remember_check" type="checkbox"/><label for="remember_check">记住账号</label>
+                    </div>
+                    <div class="tijiao">
+                        <input class=" btn-danger btn-lg" data-toggle="button" value="登录" type="submit" id="tijiao1" />
+                    </div>
+
+            </div>
+    </form>
+        </div>
+         <!--footer content-->
+
+    </div>
+
+    <div class="right"></div>
+
+
+</div>
+</body>
+</html>

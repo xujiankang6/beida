@@ -1,0 +1,343 @@
+*{
+        padding: 0;
+        margin: 0;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    .left{
+        display: flex;
+        order:1;
+        flex:1;
+
+
+    }
+    .middle{
+        width:760px;
+        background-color: white;
+        order:2;
+        flex-flow: column wrap;
+        min-height: 100%;
+    }
+    .right{
+        display: flex;
+        order:3;
+        flex:1;
+    }
+    div.top{
+        box-sizing: content-box;
+        display: block;
+        float: none;
+        line-height: 20px;
+        position: static;
+        z-index: auto;
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+        text-align: left;
+        width: 760px;
+        flex:1;
+        order:4;
+    }
+    div.img1 img{
+        box-sizing:content-box;
+        display :inline;
+        float: none;
+        line-height :20px;
+        position :static;
+        z-index :auto;
+        border-bottom-color: rgb(0, 0, 238);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 238);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 238);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 238);
+        border-top-style: none;
+        border-top-width: 0px;
+        color: rgb(0, 0, 238);
+        font-family: "Arial", "Microsoft YaHei";
+        height: 70px;
+        text-align: left;
+    }
+    div.center{
+
+        /*float: right;*/
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 20px;
+        min-height: 360px;
+        text-align: left;
+        width: 760px;
+        z-index: 1;
+        position: relative;
+        order:5;
+    }
+    div.center #beijing{
+        position: absolute;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../images/menhubiejing.jpg");
+        background-origin: padding-box;
+        background-position: 0% 10px;
+        background-position-x: 0%;
+        background-position-y: 10px;
+        width: 385px;
+        height: 288px;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        z-index: 5;
+        left: 0;
+        top:0;
+
+    }
+
+    .sing_col_panel{
+        display: block;
+        top:0;
+        right: 0;
+        float: right;
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        text-align: left;
+        width: 280px;
+        box-sizing:content-box;
+        line-height:20px;
+        position:absolute;
+        z-index:5;
+    }
+
+/*mima style*/
+    .row{
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        position: relative;
+        text-align: left;
+        width: 280px;
+        box-sizing:content-box;
+        display: block;
+        line-height: 20px;
+        z-index:auto;
+    }
+    input{
+        border-bottom-color: rgb(206, 206, 206);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-style: solid;
+        border-bottom-width: 0.8px;
+        border-image-outset: 0;
+        border-image-repeat: stretch stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(206, 206, 206);
+        border-left-style: solid;
+        border-left-width: 0.8px;
+        border-right-color: rgb(206, 206, 206);
+        border-right-style: solid;
+        border-right-width: 0.8px;
+        border-top-color: rgb(206, 206, 206);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-style: solid;
+        border-top-width: 0.8px;
+        color: rgb(183, 183, 185);
+        font-family: MS Shell Dlg 2;
+        font-size: 16px;
+        height: 40px;
+        ime-mode: disabled;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        text-align: start;
+        vertical-align: middle;
+        width: 280px;
+        box-sizing:border-box;
+        display:inline;
+        float:none;
+        line-height:20.8px;
+        position:static;
+        z-index:auto;
+    }
+
+
+    #paddwd_area{
+        box-sizing: content-box;
+        display: block;
+        line-height: 20px;
+        position: relative;
+
+    }
+    #pwd{
+        position: absolute;
+        float: left;
+        display: inline;
+        width:280px;
+        text-align: start;
+        padding-right: 100px;
+
+
+    }
+    .pad-tip{
+        box-sizing: content-box;
+        display: block;
+        line-height: 20px;
+        position:absolute;
+        float: right;
+        right: 10px;
+        top: 9px;
+        vertical-align: middle;
+        text-decoration: none;
+        height: 40px;
+    }
+    a:hover{
+        color: #8f000b;
+    }
+    input:hover{
+        border:1px solid #7A0000;
+    }
+
+    /*记住密码*/
+.jizhumima{
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    display: block;
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+
+
+
+
+}
+.jizhumima input{
+    height: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    left:-34px;
+    top:-3px;
+
+    position: absolute;
+    border: 1px solid grey;
+}
+.jizhumima label{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.jizhumima label:hover{
+    color: red;
+}
+.tijiao{
+    margin-top: 30px;
+}
+#tijiao1{
+    width:280px;
+    height:40px;
+    text-align: center;
+    background-color: rgb(169,0,0);
+}
+
+@media(max-width: 780px) {
+    div.middle{
+        width: 560px;
+    }
+    div.top{
+        width:560px;
+    }
+    div.center{
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 20px;
+        min-height: 360px;
+        text-align: left;
+        width: 560px;
+        z-index: 1;
+        position: relative;
+        order:5;
+    }
+}
+@media(max-width: 570px) {
+    div.middle{
+        width: 450px;
+        text-align: center;
+    }
+    div.top{
+        width:450px;
+        text-align: center;
+
+    }
+    div.center{
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 20px;
+        min-height: 360px;
+        text-align: center;
+        width: 450px;
+        z-index: 1;
+        position: relative;
+        order:5;
+
+    }
+     div.center #beijing{
+        position: absolute;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../images/menhubiejing.jpg");
+        background-origin: padding-box;
+        background-position: 0% 10px;
+        background-position-x: 0%;
+        background-position-y: 10px;
+        width: 385px;
+        height: 288px;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        z-index: 5;
+        left:5%;
+         right: 5%;
+        top:300px;
+
+    }
+     .sing_col_panel{
+        display: block;
+        top:0;
+
+         left: 18%;
+        float: none;
+        font-family: "Arial", "Microsoft YaHei";
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        text-align: center;
+        width: 280px;
+        box-sizing:content-box;
+        line-height:20px;
+        position:absolute;
+        z-index:5;
+    }
+
+}
+
+
+

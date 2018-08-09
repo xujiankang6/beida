@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北大概况</title>
+
+    <link href="css/index1.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/modernizr/modernizr-custom.min.js"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script src="js/beida.js" rel="script"></script>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <style>
+        .tu img{
+            width:100%;
+            height: 100%;
+            box-sizing: content-box;
+
+        }
+        .tu{
+            position: relative;
+        }
+        .dibei{
+            box-sizing: content-box;
+            display: block;
+            position: absolute;
+            height:30%;
+            left:0px;
+            opacity: 0.7;
+            text-align: center;
+            width:30%;
+            top:30%;
+            background-color: rgb(155,0,0);
+        }
+        .wenzi{
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wenzi h3{
+            color: white;
+        }
+        @media(min-width: 800px) {
+            .wenzi h3{
+                font-size: 30px;
+                color: white;
+            }
+        }
+        @media(min-width: 600px) and (max-width: 800px) {
+            .wenzi h3{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        @media(max-width: 600px) {
+            .wenzi h3{
+                font-size: 20px;
+                color: white;
+            }
+        }
+       iframe{
+           margin-top: 7px;
+
+       }
+
+    </style>
+     <script type="text/javascript">
+                   $(document).ready(function () {
+            $("#gototop").click(function () {
+            var speed=300;
+            $("body,html").animate({scrollTop:0},speed);
+            return false;
+        });
+        });
+    </script>
+</head>
+<body>
+<!--top content-->
+<div class="header-nav">
+    <!--top-nav-left content-->
+    <!--top-nav-right content-->
+        <nav class="header-nav">
+            <ul class="header-nav1">
+                <li><a class="header-nav header-nav1" href="zhengheshouye.html">学校</a> </li>
+                <li><a class="header-nav header-nav1" href="#">教职工</a> </li>
+                <li><a class="header-nav header-nav1" href="#">校友</a> </li>
+                <li><a class="header-nav header-nav1" href="#">家长</a> </li>
+                <li><a class="header-nav header-nav1" href="预约参观.html">访客</a> </li>
+                <li><a class="header-nav header-nav1" href="#">招聘</a> </li>
+            </ul>
+            <ul class="header-nav2">
+                <li><a class="header-nav header-nav2" href="menhu.html">门户</a> </li>
+                <li><a class="header-nav header-nav2" href="#">网络</a> </li>
+                <li><a class="header-nav header-nav2" href="#">邮箱</a> </li>
+                <li><a class="header-nav header-nav2" href="#">BBS</a> </li>
+                <li><a class="header-nav header-nav2" href="beidatushuguan.html">图书馆</a> </li>
+                <li><a class="header-nav header-nav2" href="#">English</a> </li>
+                <li><a class="header-nav header-nav2" href="#"></a></li>
+            </ul>
+        </nav>
+    <!--top-middle-content-->
+        <header class="nav-header"><a class="nav-header" href="zhengheshouye.html" title="Go to home page">
+            <img id="navimg1" src="images/pkulogo_grey.png"/>
+        </a></header>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" id="menu" onclick></label>
+    <!--top-bottom-content-->
+        <nav class="header-nav">
+            <ul class="header-nav">
+                <li><a class="header-nav" href="#">北大概况</a> </li>
+                <li><a class="header-nav" href="#">招生与资助</a> </li>
+                <li><a class="header-nav" href="#">学部与院系</a> </li>
+                <li><a class="header-nav" href="#">教育教学</a> </li>
+                <li><a class="header-nav" href="#">科学研究</a> </li>
+                <li><a class="header-nav" href="#">合作交流</a> </li>
+                <li><a class="header-nav" href="#">校园生活</a> </li>
+            </ul>
+        </nav>
+
+    </div>
+<!--top content end-->
+<!--tu content -->
+<div class="main-info">
+        <!--lunbo content-->
+        <div class="row1">
+            <div class="block1">
+                <div class="tu">
+                    <img src="images/bieda1.jpg"/>
+                    <div class="dibei">
+                        <div class="wenzi">
+                            <h3>北大概况</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!--tu content end-->
+
+    <iframe name="myframe" src="gaikuai1.html" scrolling="no" frameborder="0"
+            onload="document.all('myframe').height=myframe.document.body.scrollHeight" width="100%">
+
+    </iframe>
+    <iframe name="myframe2" src="footer.html" scrolling="no" frameborder="0"
+            onload="document.all('myframe2').height=myframe2.document.body.scrollHeight" width="100%">
+    </iframe>
+
+<!--go to top content-->
+<div class="" id="gototop" style="display: block">
+
+</div>
+<!--go to top end-->
+</body>
+</html>

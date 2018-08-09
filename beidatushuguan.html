@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北大图书馆</title>
+    <link rel="stylesheet" href="css/beidatushuguan.css"/>
+    <link rel="stylesheet" href="img/font-awesome.min.css"/>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+//        tuqiehuan js
+        $(document).ready(function () {
+            $("#yi").click(function () {
+                $("#diyiye").css('display','block').siblings().css('display','none')
+            });
+            $("#er").click(function () {
+                $("#diyiye2").css('display','block').siblings().css('display','none')
+
+            });
+            $("#san").click(function () {
+                $("#diyiye3").css('display','block').siblings().css('display','none')
+
+            });
+            $("#si").click(function () {
+                $("#diyiye4").css('display','block').siblings().css('display','none')
+
+            });
+        });
+
+//        mao link js
+        $(document).ready(function () {
+            $(".mao ul li").click(function () {
+                $(this).addClass("maohou").siblings().removeClass("maohou")
+            });
+        });
+
+        $(function(){
+	$('.section4>ul>li').hover(function(){
+		$('.special-title',this).stop('slow').animate({
+			height:'252px'
+		});
+	},function(){
+		$('.special-title',this).stop('slow').animate({
+			height:'0px'
+		});
+	});
+});
+//        xueyuan js
+$(document).ready(function () {
+            $("#wu").click(function () {
+                $("#xuanze1").css('display','block').siblings().css('display','none')
+            });
+            $("#shu").click(function () {
+                $("#xuanze2").css('display','block').siblings().css('display','none')
+
+            });
+            $("#qi").click(function () {
+                $("#xuanze3").css('display','block').siblings().css('display','none')
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+                   $(document).ready(function () {
+            $("#gototop").click(function () {
+            var speed=300;
+            $("body,html").animate({scrollTop:0},speed);
+            return false;
+        });
+        });
+                   $(document).ready(function () {
+                       $("#ziyuan44444").click(function () {
+                           $("#zii1").slideToggle(500);
+                       })
+                   })
+        $(document).ready(function () {
+            $("#z1").click(function () {
+                $("#zhan1").slideToggle(500);
+            })
+
+        })
+        $(document).ready(function () {
+            $(".sou11111").click(function () {
+                $("#sou222").slideToggle().css({
+                    top:$(".sou11111").offset().top+$(".sou11111").height(),
+                    left:$(".sou11111").offset().left-80
+                    })
+            })
+        })
+    </script>
+
+</head>
+<body>
+<div class="topbeijing"></div>
+<div class="all">
+
+    <!--sousuokuang-->
+    <div style="width: 200px; height: 30px; background-color:white; display:none; position: absolute" id="sou222" >
+        <input class="shuru11" type="text" placeholder="请输入内容"/><input class="tijiao22" type="button" value="搜索"/>
+    </div>
+    <!--first content-->
+
+        <!--top content-->
+        <div id="y1" class="top">
+            <div class="top_nav">
+                <ul>
+                    <li class="sou11111" style="position: relative">
+                        <a><img src="img/搜索.png"></a>
+
+                    </li>
+                    <li><span><a>旧版</a></span></li>
+                    <li><a>新版建设</a></li>
+                    <li><a href="#">我的图书馆</a></li>
+                    <li><a><img src="img/zi.png"> 咨询</a></li>
+                    <li><a><img src="img/juan.png">捐赠</a></li>
+                    <li><a><img src="img/shijian.png"/>今日开馆：8：00-21：00</a></li>
+                </ul>
+            </div>
+            <div class="top_logo"><a href="zhengheshouye.html"><img src="img/log1.png"/></a></div>
+        </div>
+        <!--top content end-->
+
+        <!--top middle content-->
+        <div class="top_middle">
+            <div class="top_middle_nav">
+                <nav class="navbar navbar-default navbar-inverse" role="navigation" id="top_search">
+                <div class="navbar-header">
+                <a id="ziyuan44444" class="navbar-brand" href="#">图书馆资源</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">功能<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">业务功能</li>
+                <li><a href="#">信息建立</a></li>
+                <li><a href="#">信息查询</a></li>
+                <li><a href="#">信息管理</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">系统功能</li>
+                <li><a href="#">设置</a></li>
+                </ul>
+                </li>
+                <li><a href="#">帮助</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="图书">
+                <input type="text" class="form-control" placeholder="编号">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                </div>
+
+
+                </nav>
+            </div>
+            <div id="zii1" style="display: none" class="sidebar">
+                <ul class="nav nav-sidebar">
+                <li><a href="#">未命名搜索</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li id="z5"><a href="#">信息建立</a></li>
+                    <li id="z4"><a href="#">信息查询</a></li>
+                    <li id="z3"><a href="#">信息管理</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li id="z2"><a href="#">设置</a></li>
+                    <li id="z1"><a href="#">站内搜索</a></li>
+                </ul>
+            </div>
+            <div id="zhan1" style="display: none" class="sidebar_right">
+                <h2>站内搜索</h2>
+
+                <div class="sobei">
+                    <form class="navbar-form" role="search" id="so">
+                        <div class="form-group navbar-form" role="search">
+                        <input type="text" class="form-control input-lg" placeholder="图书名..." id="sokuan" >
+                        </div>
+                        <button type="submit" class="btn btn-default" id="dengan">搜索</button>
+                    </form>
+                </div>
+
+
+
+</div>
+            </div>
+
+        <div class="top_bottom">
+            <ul class="container" id="custom-front-top-best-dozen">
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="馆藏分布"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="馆藏分布">馆藏分布</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="借阅制度"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="借阅制度">借阅制度</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="借阅/续借/预约"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="借阅/续借/预约">借阅/续借</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="阅读推荐"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="阅读推荐">阅读推荐</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="新书通报"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="新书通报">新书通报</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="读者推荐购买"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="读者推荐购买">推荐购买</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="新生指南"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="新生指南">新生指南</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="一小时讲座"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="一小时讲座">一小时讲座</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="工具软件"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="工具软件">工具软件</a></p>
+  </li>
+  <li class="col-lg-1 col-md-2 col-sm-2 col-xs-3">
+    <a target="_blank" href="#" title="打印/复印/扫描"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="打印/复印/扫描">打印/复印</a></p>
+  </li>
+  <li>
+    <a target="_blank" href="#" title="在线展览"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a>
+    <p>
+      <a target="_blank" href="#" title="在线展览">在线展览</a></p>
+  </li>
+</ul>
+        </div>
+    <!--first content end-->
+
+    <!--section1 content-->
+    <div id="y2" class="section1">
+        <!--section1_content left-->
+        <div class="section1_left">
+            <!--section1_left_top content-->
+            <div class="section1_left_top">
+                <div class="pane-news-list">
+
+                <h2 class="pane-title"><a href="#">最新消息</a></h2>
+
+
+  <div class="pane-content">
+    <div class="view view-news-list view-id-news_list">
+      <div class="view-content">
+        <div class="views-row-first views-row">
+
+            <span class="news-list-created"><span class="field-content">08/02</span></span>
+            <span class="news-list-link">
+
+            <a href="#" class="links-type-class-news" target="_blank">新闻</a>
+            </span>
+            <span class="news-list-title"><span class="field-content">
+                <a href="#" target="_blank"><span title="书刊检索服务暂停通知">书刊检索服务暂停通知</span>
+                </a></span></span>
+
+        </div>
+        <div class="views-row-2 views-row">
+
+            <span class="news-list-created"><span class="field-content">07/06</span></span>
+            <span class="news-list-link">
+                <a href="#" class="links-type-class-news" target="_blank">新闻</a>
+            </span>
+            <span class="news-list-title"><span class="field-content"><a href="#" target="_blank">
+            <span title="关于东西楼之间封堵隔离施工的通知">关于东西楼之间封堵隔离施工的通知</span></a></span></span>
+        </div>
+        <div class="views-row views-row-3 views-row-odd">
+
+<span class="news-list-created"><span class="field-content">07/05</span></span>
+<span class="news-list-link">
+
+<a href="#" class="links-type-class-anounce" target="_blank">公告</a>
+</span>
+<span class="news-list-title"><span class="field-content">
+    <a href="#" target="_blank"><span title="2018年图书馆暑假开馆时间">2018年图书馆暑假开馆时间</span></a></span></span>
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+
+<span class="news-list-created"><span class="field-content">04/06</span></span>
+<span class="news-list-link">
+
+<a href="#" class="links-type-class-news" target="_blank">新闻</a>
+</span>
+<span class="news-list-title"><span class="field-content">
+    <a href="#" target="_blank"><span title="学术征文通知：纪念北京大学图书馆建馆120周年">
+        学术征文通知：纪念北京大学图书馆建馆120周年</span>
+    </a>
+</span></span>
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+
+<span class="news-list-created"><span class="field-content">04/10</span></span>
+<span class="news-list-link">
+
+<a href="#" class="links-type-class-news" target="_blank">新闻</a>
+</span>
+<span class="news-list-title"><span class="field-content">
+    <a href="#" target="_blank">
+    <span title="“天堂的模样” ：图书馆120周年馆庆读者征文">“天堂的模样” ：图书馆120周年馆庆读者征文</span>
+    </a>
+</span></span>
+
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+
+<span class="news-list-created"><span class="field-content">05/28</span></span>
+<span class="news-list-link">
+
+<a href="#" class="links-type-class-news" target="_blank">新闻</a>
+</span>
+<span class="news-list-title"><span class="field-content">
+    <a href="#" target="_blank"><span title="第四届北京大学图书馆搜索达人大赛决赛与抽奖结果">第四届北京大学图书馆搜索达人大赛决赛与抽奖结果</span></a>
+</span></span>
+
+  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+
+<span class="news-list-created"><span class="field-content">04/20</span></span>
+<span class="news-list-link">
+
+<a href="#" class="links-type-class-news" target="_blank">新闻</a>
+</span>
+<span class="news-list-title"><span class="field-content"><a href="#" target="_blank">
+    <span title="北京大学图书馆电子资源需求和使用情况调查">北京大学图书馆电子资源需求和使用情况调查</span>
+</a></span></span>
+
+  </div>
+    </div>
+
+
+
+
+<div class="more-link">
+  <a href="#" target="_blank">
+    更多+  </a>
+</div>
+
+
+
+</div>  </div>
+
+
+  </div>
+            </div>
+            <!--section1_left_top end-->
+            <!--section1_left_bottom content-->
+            <div class="panel-pane pane-views pane-resource-news-list">
+
+        <h2 class="pane-title">
+      <a href="#">最新资源</a>    </h2>
+
+
+  <div class="pane-content">
+    <div class="view view-resource-news-list view-id-resource_news_list">
+
+
+
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+
+  <span class="views-field views-field-created">        08/02  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-22" target="_blank">购买</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank"><span title="Books In Print Global Edition">Books In Print Global Edition</span></a>  </span>  </div>
+  <div class="views-row views-row-2 views-row-even">
+
+  <span class="views-field views-field-created">        07/16  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">
+      <a href="#" class="resource-22" target="_blank">购买</a>  </span>
+  <span class="views-field views-field-title">
+      <a href="#" target="_blank"><span title="Bibliotheca Teubneriana Latina (BTL) ">Bibliotheca Teubneriana Latina (BTL)</span></a>  </span>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+
+  <span class="views-field views-field-created">        07/12  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-21" target="_blank">试用</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank"><span title="源素通数据库试用">源素通数据库试用</span></a>  </span>  </div>
+  <div class="views-row views-row-4 views-row-even">
+
+  <span class="views-field views-field-created">        07/06  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-22" target="_blank">购买</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank"><span title="the Company of Biologists数据库 ">the Company of Biologists数据库 </span></a>  </span>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+
+  <span class="views-field views-field-created">        07/04  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-22" target="_blank">购买</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank">
+      <span title="worldlib国外开放获取文献整合平台">worldlib国外开放获取文献整合平台</span></a>  </span>  </div>
+  <div class="views-row views-row-6 views-row-even">
+
+  <span class="views-field views-field-created">        06/26  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-21" target="_blank">试用</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank"><span title="近代报纸数据库试用">近代报纸数据库试用</span></a>  </span>  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+
+  <span class="views-field views-field-created">        06/26  </span>
+  <span class="views-field views-field-name-i18n views-field-field-news-type">        <a href="#" class="resource-21" target="_blank">试用</a>  </span>
+  <span class="views-field views-field-title">        <a href="#" target="_blank"><span title="民国图书数据库试用">民国图书数据库试用</span></a>  </span>  </div>
+    </div>
+
+
+
+
+<div class="more-link">
+  <a href="#" target="_blank">
+    更多+  </a>
+</div>
+
+
+
+</div>  </div>
+
+
+  </div>
+            <!--section1_left_bottom end-->
+        </div>
+        <!--section1_content end-->
+        <div class="section1_right">
+            <div class="section1_right_top">
+            <div id="diyiye" style="display: block">
+            <div class="tu1">
+                <img src="img/tus1.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/yibai.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/guanyin.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/fa.png"/>
+            </div>
+            </div>
+            <div id="diyiye2" style="display: none">
+            <div class="tu1">
+                <img src="img/tus1.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/tus1.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/tus1.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/tus1.png"/>
+            </div>
+            </div>
+            <div id="diyiye3" style="display: none">
+            <div class="tu1">
+                <img src="img/yibai.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/yibai.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/yibai.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/yibai.png"/>
+            </div>
+
+        </div>
+            <div id="diyiye4" style="display: none">
+            <div class="tu1">
+                <img src="img/fa.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/fa.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/fa.png"/>
+            </div>
+            <div class="tu1">
+                <img src="img/fa.png"/>
+            </div>
+
+        </div>
+            </div>
+            <div class="section1_right_bottom">
+                <span id="yi"></span><span id="er"></span><span id="san"></span><span id="si"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <!--section1 content end-->
+
+    <!--section2 content-->
+    <div id="y3" class="section2">
+        <h3 class="renmen">
+            <span>热门服务----------------------------------------------------------------------------</span>
+        </h3>
+
+    <!--section2 left-->
+    <div class="section2_left">
+        <h3 class="xue">学生</h3>
+        <div id="custom-front-service-service-list">
+            <ul class="for-students">
+	<li class="type-title">
+		空间布局
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">馆藏分布</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">座位分布</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title">
+		图书借阅
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/mylib/services/status" title="">个人借阅状态查询</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/jyfw/yuyue" title="">预约与催还</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/jy/jybl/jiehuanxujie" title="">图书借还与续借</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fg/jieyueshuoming" title="">借阅分馆FAQ</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title">
+		馆际互借
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="http://ill.lib.pku.edu.cn:8090/idp/pku?cmd=ill-route" title="">提交申请</a></p>
+			</li>
+			<!--这个链接没有找到 -->
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">校外书目查询系统</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title ">
+		阅读推广
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">新书通报</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">教授推荐阅读</a></p>
+			</li>
+			<!--这个链接画了删除线 -->
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">年度阅读报告</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title ">
+		设备设施
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/xxzc/tycx?qt-content_page_innovation=2#qt-content_page_innovation" title="">3D打印服务</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/kongjiansheshi/zizhufuwu" title="">自助服务</a></p>
+			</li>
+			<!--无链接 -->
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/jyfw/dianzhishu" title="">设备出借</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title">
+		提升信息素养
+		<ul>
+			<!--无链接 -->
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/xxzc/yixiaoshi" title="">一小时讲座</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/yixiaoshijiangzuo/xinxisuyang" title="">信息素养课</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/yixiaoshijiangzuo/xinxisuyang" title="">《数字图书馆资源检索与利用》视频课</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="http://il.lib.pku.edu.cn/" title="">信息素养能力评测</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="/portal/cn/fw/yixiaoshijiangzuo/xinxisuyangyouxi" title="">信息素养手机游戏</a></p>
+			</li>
+			<li>
+				<p>&nbsp;
+					</p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title">
+		常用软件与培训
+		<ul>
+			<!--无链接 -->
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">联创自助打印系统驱动</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">SPSS</a></p>
+			</li>
+			<!--无链接 -->
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">NoteExpress</a></p>
+			</li>
+			<!--无链接 -->
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">EndNote</a></p>
+			</li>
+			<li>
+				<p>
+					<a target="_blank" href="#" title="">一小时讲座之软件达人</a></p>
+			</li>
+		</ul>
+	</li>
+	<li class="type-title">
+		数字加工服务
+		<ul>
+			<!--无链接 -->
+			<li>
+				<p><a target="_blank" href="#" title="">纸质文献数字化</a></p>
+			</li>
+			<li>
+				<p><a target="_blank" href="#" title="">元数据加工制作</a></p>
+			</li>
+			<li>
+				<p><a target="_blank" href="#" title="">珍贵字画高仿复制</a></p>
+			</li>
+			<li>
+				<p><a target="_blank" href="#" title="">讲座/会议摄录和直播</a></p>
+			</li>
+		</ul>
+	</li>
+</ul>
+        </div>
+    </div>
+
+    <!--section2 right-->
+    <div class="section2_right">
+        <div class="custom-front-service-4researchers">
+        <h3 class="yan">研究生+教师</h3>
+
+<ul class="for-teachers">
+    <li class="type-title col-lg-6 col-md-6 col-sm-12 col-xs-6">
+        学科分析报告
+        <ul>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/kyzc/jingzhengqingbao" title="">学科竞争力分析报告</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/kyzc/zhishichanquan" title="">学科前沿报告</a></p>
+            </li>
+        </ul>
+    </li>
+    <li class="type-title col-lg-6 col-md-6 col-sm-12 col-xs-6">
+        专利申请
+        <ul>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/zlxx/zhuanlizixun" title="">专利咨询</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/zlxx/zhuanlipeixun" title="">相关培训</a></p>
+            </li>
+            <!--是否为专利资源导航 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/zlxx/zhuanliziyuan" title="">专利数据库</a></p>
+            </li>
+        </ul>
+    </li>
+    <li class="type-title col-lg-6 col-md-6 col-sm-12 col-xs-6">
+        教学与培训
+        <ul>
+            <!--无链接 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/xxzc/yixiaoshi" title="">一小时讲座</a></p>
+            </li>
+            <!--无链接 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/yixiaoshijiangzuo/zhuanchangjiangzuo" title="">定制讲座</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/fw/yixiaoshijiangzuo/xinxisuyang" title="">信息素养课</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="http://il.lib.pku.edu.cn/" title="">信息素养能力评测</a></p>
+            </li>
+        </ul>
+    </li>
+
+    <li class="type-title col-lg-6 col-md-6 col-sm-12 col-xs-6">
+        写作支持
+        <ul>
+            <!--无链接 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/xxzc/yixiaoshi?qt-content_page_onehour=2" title="">如何洞悉学科热点</a></p>
+            </li>
+            <!--无链接 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/xxzc/yixiaoshi?qt-content_page_onehour=2" title="">如何进行文献调研</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/xxzc/yixiaoshi?qt-content_page_onehour=2" title="">学术规范论文写作</a></p>
+            </li>
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/xxzc/yixiaoshi?qt-content_page_onehour=2" title="">论文投稿指南</a></p>
+            </li>
+            <!--无链接 -->
+            <li>
+                <p>
+                    <a target="_blank" href="/portal/cn/zy/software?qt-content_page_software=3#qt-content_page_software" title="">文献管理软件</a></p>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</div>
+    </div>
+    </div>
+
+    <!--section3 content-->
+    <div id="y4" class="section3">
+        <h3 class="renmen">
+            <span class="guan">馆藏资源</span><span class="guanx">----------------------------------------------------------------------------</span>
+        </h3>
+        <div class="section3_left">
+            <ul id="section3_left_guan">
+	<!--图书和电子图书不是一个url-->
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">图书/期刊</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">电子图书</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">电子期刊</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">数据库</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">学位论文</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">古籍</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">视频/音频</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">随书光盘</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">报纸</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">统计数据/研究数据</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">档案</a></p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="#" title="">工具与软件</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="section3_right">
+            <div id="custom-front-resource-right">
+                <h3>经济学图书奖系列（英文）</h3>
+                <ul>
+                    <li>
+                        <a target="_blank" href="#">
+                        <div class="prize-img"><img src="img/111.png"> </div>
+                        </a>
+                        <div class="prize-info">
+                            <a target="_blank" href="#" title=""></a>
+                            <p class="prize-title"><a target="_blank" href="#"></a>
+                                <a target="_blank" href="#">Financial Times and McKinsey Business Book of the Year Award</a>
+                            </p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                        <div class="prize-img"><img alt="" src="img/222.png"> </div>
+                        </a><div class="prize-info"><a target="_blank" href="#"></a><p class="prize-title"><a target="_blank" href="#">
+                            </a><a target="_blank" href="#">George Terry Award</a></p>
+                        <p class="prize-intro">
+                            </p></div>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                        <div class="prize-img"><img alt="" src="img/333.png"> </div>
+                        </a><div class="prize-info"><a target="_blank" href="#" title=""></a><p class="prize-title"><a target="_blank" href="#">
+                            </a><a target="_blank" href="#" title="">Thomas Guggenheim Prize in the History of Economics</a></p>
+                        <p class="prize-intro">
+                            </p></div>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="#" title="">
+                        <div class="prize-img"><img alt="" src="img/444.png"> </div>
+                        </a><div class="prize-info"><a target="_blank" href="#" title=""></a><p class="prize-title"><a target="_blank" href="#">
+                            </a><a target="_blank" href="#" title="">Ranki Prize</a></p>
+                        <p class="prize-intro">
+                            </p></div>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="#" title="">
+                        <div class="prize-img"><img alt="" src="img/555.png"> </div>
+                        </a><div class="prize-info"><a target="_blank" href="#" title=""></a><p class="prize-title"><a target="_blank" href="#">
+                            </a><a target="_blank" href="#">Axiom Business Book Awards</a></p>
+                        <p class="prize-intro">
+                            </p></div>
+
+                    </li>
+                    <li class="resource-readmore">
+                        <a target="_blank" href="#" >
+                        <div class="prize-img"><img alt="" src="img/555.png"> </div>
+                        </a><div class="prize-info"><a target="_blank" href="#" title=""></a><p class="prize-title"><a target="_blank" href="#">
+                            </a><a target="_blank" href="#">了解更多+</a></p>
+                        <p class="prize-intro">
+                            </p></div>
+
+                    </li>
+
+                </ul>
+                <p id="wang">
+                    <a target="_blank" href="#">往届精选图书&gt;</a></p>
+            </div>
+
+        </div>
+    </div>
+
+<!--section4 content-->
+    <div id="y5" class="section4">
+        <h3 class="renmen">
+            <span class="guan">特色资源</span><span class="guanx">-----------------------------------------------------------------------------------</span>
+        </h3>
+        <div class="special-readmore">
+            <span><a href="#">浏览更多&gt;</a></span>
+        </div>
+
+        <ul>
+
+            <li>
+                    <div class="special-img" >
+                        <img src="img/1111.png">
+                    </div>
+                    <div class="special-title">
+                        古文献资源库
+                    </div>
+            </li>
+
+            <li>
+                    <div class="special-img" >
+                        <img alt="北大讲座" src="img/2222.png">
+                    </div>
+                    <div class="special-title">
+                        北大讲座
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <div class="jia"><img alt="北大讲座" src="img/7777.png"></div>
+
+                    </div>
+                    <div class="special-title">
+                        数字特藏
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <img alt="北大讲座" src="img/3333.png">
+                    </div>
+                    <div class="special-title">
+                        晚清民国文献
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <img src="img/4444.png">
+                    </div>
+                    <div class="special-title">
+                        西文特藏
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <img alt="北大讲座" src="img/5555.png">
+                    </div>
+                    <div class="special-title">
+                        燕大学位论文
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <img alt="北大讲座" src="img/6666.png">
+                    </div>
+                    <div class="special-title">
+                        北大文库
+                    </div>
+            </li>
+            <li>
+                    <div class="special-img" >
+                        <img alt="北大讲座" src="img/7777.png">
+                    </div>
+                    <div class="special-title">
+                        民人藏书
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+<!--section5 content-->
+
+    <div id="y6" class="section5">
+        <div class="section5_top">
+        <h3 class="renmen" id="jieshao">
+            <span class="guan">分馆介绍</span><span class="guanx">-------------------------------------------------</span>
+            <div class="form-group xuanxian">
+                <select class="form-control xuan1">
+                  <option>理学部</option>
+                  <option>人文学部</option>
+                  <option>信息学部</option>
+                  <option>医学部</option>
+                  <option>社会科学部</option>
+                </select>
+            </div>
+            <div class="form-group xuanxian">
+                <select class="form-control xuan2">
+                  <option id="wu">物理学院</option>
+                  <option id="shu">数学学院</option>
+                  <option id="qi">其它学院</option>
+                  <option>医学部</option>
+                  <option>社会科学部</option>
+                </select>
+            </div>
+        </h3>
+        </div>
+        <div class="xuanxianka">
+         <div id="xuanze1">
+             <div class="section5_left">
+                 <img src="img/wuli.png"/>
+             </div>
+             <div class="section5_middle">
+                 <h3>物理学院</h3>
+                 <p>收藏书刊14万册（其中3万册有关天文、大气的书刊存放理科楼，1万册俄文和日文书刊存放技物楼）。馆藏的中外文书刊几乎涵盖了物理学科的各个分支，其中物理学领域的名著、
+                     珍本著作2,158种；1900年以前出版的外文期刊20余种，涉及京师大学堂、老北大、老清华、燕京大学、西南联大等不同时期收藏的物理学科经典著作。 </p>
+                 <p><a target="_blank" href="#">了解更多</a></p>
+
+             </div>
+             <div class="section5_right">
+                 <ul>
+<li class="front-branch-right-kaiguanshijian"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>周一至周五  8:00-12:00  13:00-17:00 </li>
+<li class="front-branch-right-dizhi"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>物理西楼B106 </li>
+<li class="front-branch-right-dianhua"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>62751736</li>
+<li class="front-branch-right-email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>maxm@pku.edu.cn</li>
+<li class="front-branch-right-fanwei"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>全校师生可借阅，校外读者可阅览、复印 </li>
+</ul>
+             </div>
+        </div>
+        <div id="xuanze2" style="display: none">
+             <div class="section5_left">
+                 <img src="img/11111.jpg"/>
+             </div>
+             <div class="section5_middle">
+                 <h3>数学学院</h3>
+                 <p>收藏书刊14万册（其中3万册有关天文、大气的书刊存放理科楼，1万册俄文和日文书刊存放技物楼）。馆藏的中外文书刊几乎涵盖了物理学科的各个分支，其中物理学领域的名著、
+                     珍本著作2,158种；1900年以前出版的外文期刊20余种，涉及京师大学堂、老北大、老清华、燕京大学、西南联大等不同时期收藏的物理学科经典著作。 </p>
+                 <p><a target="_blank" href="#">了解更多</a></p>
+
+             </div>
+             <div class="section5_right">
+                 <ul>
+<li class="front-branch-right-kaiguanshijian"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>周一至周五  8:00-12:00  13:00-17:00 </li>
+<li class="front-branch-right-dizhi"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>物理西楼B106 </li>
+<li class="front-branch-right-dianhua"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>62751736</li>
+<li class="front-branch-right-email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>maxm@pku.edu.cn</li>
+<li class="front-branch-right-fanwei"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>全校师生可借阅，校外读者可阅览、复印 </li>
+</ul>
+             </div>
+        </div>
+        <div id="xuanze3" style="display: none">
+             <div class="section5_left">
+                 <img src="img/22222.png"/>
+             </div>
+             <div class="section5_middle">
+                 <h3>其它学院</h3>
+                 <p>收藏书刊14万册（其中3万册有关天文、大气的书刊存放理科楼，1万册俄文和日文书刊存放技物楼）。馆藏的中外文书刊几乎涵盖了物理学科的各个分支，其中物理学领域的名著、
+                     珍本著作2,158种；1900年以前出版的外文期刊20余种，涉及京师大学堂、老北大、老清华、燕京大学、西南联大等不同时期收藏的物理学科经典著作。 </p>
+                 <p><a target="_blank" href="#">了解更多</a></p>
+
+             </div>
+             <div class="section5_right">
+                 <ul>
+<li class="front-branch-right-kaiguanshijian"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>周一至周五  8:00-12:00  13:00-17:00 </li>
+<li class="front-branch-right-dizhi"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>物理西楼B106 </li>
+<li class="front-branch-right-dianhua"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>62751736</li>
+<li class="front-branch-right-email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>maxm@pku.edu.cn</li>
+<li class="front-branch-right-fanwei"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>全校师生可借阅，校外读者可阅览、复印 </li>
+</ul>
+             </div>
+        </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--mao link content-->
+    <div class="mao">
+        <ul>
+            <li><a href="#y1" title="y1">1</a></li>
+            <li><a href="#y2">2</a></li>
+            <li><a href="#y3">3</a></li>
+            <li><a href="#y4">4</a></li>
+            <li><a href="#y5">5</a></li>
+            <li><a href="#y6">6</a></li>
+        </ul>
+    </div>
+ </div>
+<!--footer content-->
+<div class="footer">
+    <div class="footer_main">
+        <div class="footer_top">
+            <img src="img/Footer-LOGO.png"/>
+            <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+            <span>本周（2018.07.30-08.05）闭馆音乐曲目：秋日的私语</span>
+        </div>
+
+
+        <div class="footer_center">
+            <div class="fwl-content">
+                <span class="fwl-item"><a href="http://www.pku.edu.cn" target="_blank">北京大学</a></span> |
+                    <span class="fwl-item"><a href="http://www.calis.edu.cn/" target="_blank">CALIS</a></span> |
+                    <span class="fwl-item"> <a href="http://www.cashl.edu.cn/portal/index.jsp" target="_blank">CASHL</a></span> |
+                    <span class="fwl-item"> <a href="http://162.105.140.111/bjcb/dxtsgxb/gqml" target="_blank">大学图书馆学报</a></span> |
+                    <span class="fwl-item"> <a href="http://wlzx.lib.pku.edu.cn/" target="_blank">文理中心</a></span> |
+                    <span class="fwl-item"> <a href="http://162.105.140.111/" target="_blank">图工委</a></span> |
+                    <span class="fwl-item"> <a href="http://www.sal.edu.cn/" target="_blank">高校分会</a></span> |
+                    <span class="fwl-item"> <a href="http://www.libconsortia.edu.cn/index.action" target="_blank">DRAA</a></span>
+                </div>
+            <div class="fwl-content">
+			<span class="fwl-item"><a href="#" target="_blank">馆员空间</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">图书馆邮箱</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">分馆流通信息</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">馆长信箱</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">常用链接</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">网站地图</a></span> |
+                <span class="fwl-item"><a href="#" target="_blank">回到旧版</a></span>
+            </div>
+
+        </div>
+        <div class="footer_bottom">
+            <div class="fwl-content">
+			版权所有 2012-2018 北京大学图书馆</div>
+        </div>
+    </div>
+</div>
+
+<!--go to top-->
+<div class="" id="gototop" style="display: block">
+
+</div>
+</body>
+</html>

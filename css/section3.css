@@ -1,0 +1,214 @@
+/*general style*/
+.clear:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: #7A0000;
+}
+.ztw{
+    overflow: hidden;
+    padding-top: 35px;
+    width:1000px;
+    box-sizing: content-box;
+    display: block;
+    margin: auto;
+    line-height: 20px;
+    position: static;
+    z-index: auto;
+}
+.ztw dl dt{
+    background-color: rgb(244, 244, 244);
+    color: rgb(86, 86, 86);
+    float: left;
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    height: 101px;
+    line-height: 101px;
+    padding-top: 21px;
+    text-align: center;
+    width:99px;
+    vertical-align:bottom;
+    box-sizing: content-box;
+    display: block;
+    z-index: auto;
+
+}
+
+.ztw dl dt span{
+    box-sizing: content-box;
+    display: inline;
+    z-index: auto;
+    max-width: 100%;
+    font-size: 20px;
+    height: 80px;
+    padding-bottom: 35px;
+    line-height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    /*line-height: 101px;*/
+}
+
+.ztw dl dd{
+    float: left;
+    box-sizing: content-box;
+    display: block;
+}
+.ztw dl dd ul{
+    overflow: hidden;
+    box-sizing: content-box;
+    display: block;
+    list-style-type: none;
+}
+.ztw dl dd ul li{
+    overflow: hidden;
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 122px;
+    float: left;
+}
+.ztw dl dd ul li a{
+    box-sizing: content-box;
+    display: inline;
+    position: static;
+    line-height: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.ztw dl dd ul li a img{
+    box-sizing: content-box;
+    display: inline;
+    position: static;
+    border-bottom-color: rgb(255, 255, 255);
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    color: rgb(255, 255, 255);
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    height: 122px;
+    line-height: 20px;
+    list-style-type: none;
+    max-width: 100%;
+    vertical-align: bottom;
+    width: 180px;
+}
+
+
+@media(max-width: 1000px) {
+    .ztw{
+        width:100%;
+    }
+    .ztw dl dd{
+    float: left;
+    width: 100%;
+    box-sizing: content-box;
+    display: block;
+}
+    .ztw dl{
+        width:100%;
+    }
+    .ztw dl dt{
+        width:100%;
+    }
+
+    .ztw dl dd ul{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+   .flexwrap.flexbox.ztw dl dd ul li{
+        flex:1 1 180px;
+
+    }
+
+}
+
+
+@media(max-width: 800px) {
+    .ztw{
+        width:100%;
+    }
+    .ztw dl dd{
+    float: left;
+    width: 100%;
+    box-sizing: content-box;
+    display: block;
+}
+    .ztw dl{
+        width:100%;
+    }
+    .ztw dl dt{
+        width:100%;
+    }
+
+    .ztw dl dd ul{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        width:100%;
+    }
+   .flexwrap.flexbox.ztw dl dd ul li{
+        flex:1 1 180px;
+       float: left;
+    }
+}
+
+/*section3 h3 texiao*/
+.ztw dl dd ul li a h3{
+    box-sizing: content-box;
+    display: block;
+    position: absolute;
+   z-index: 2;
+    line-height: 28px;
+    left:0;
+    font-size: 14px;
+    list-style-type: none;
+    max-width: 100%;
+    bottom:0px;
+    opacity: 0.5;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s;
+    font-family: "Microsoft Yahei", Arial;
+}
+.ztw dl dd ul li:hover a h3{
+    animation: sport 1s;
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: white;
+
+}
+
+ @keyframes sport {
+            0%   {transform: translateY(80px);opacity: 1;}
+            25%  {transform: translateY(50px);opacity: 1}
+            50%  {transform: translateY(20px);opacity: 1}
+            100% {transform: translateY(0px);opacity: 1}
+        }
+
+
+
+
+
+
+
+
+

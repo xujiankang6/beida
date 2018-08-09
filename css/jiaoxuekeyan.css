@@ -1,0 +1,641 @@
+/* general styles*/
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+  -webkit-animation: bugfix infinite 1s; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; }
+}
+
+
+/* main-info styles */
+
+
+.flexbox.flexwrap ul.footer-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.main-info{
+    width: 100%;
+    background-color: white;
+
+}
+div.row2{
+    margin: 0rem auto;
+    max-width: 1000px;
+    padding: 0;
+    padding-left: 1.2rem;
+
+}
+
+ div.block2, div.block3{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size:1.5rem;
+    color: white;
+}
+
+/* 除去 div.row1, div.row2, div.row3的样式*/
+
+/* enhance styles */
+.flexbox.flexwrap div.row2{
+    display: flex;
+    flex-wrap:wrap;
+}
+/*.flexbox.flexwrap div.block2,.flexbox.flexwrap div.block3{*/
+    /*flex:1 1 568px;*/
+/*}*/
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: #7A0000;
+}
+/*main style*/
+.main{
+    width:1000px;
+    margin:auto;
+}
+/*conL style*/
+.conL{
+    width:568px;
+    float: left;
+    display: block;
+    text-align: left;
+
+}
+/*jxky style*/
+.jxky{
+    width:568px;
+    height: 171px;
+    box-sizing: content-box;
+    position: static;
+}
+.jxky h2{
+    font-size: 18px;
+    font-weight: 400;
+    height:42px;
+    line-height: 42px;
+    display: block;
+    position: static;
+    z-index: auto;
+    margin-bottom: 8px;
+    border-bottom: 1.6px solid rgb(140,0,0);
+}
+.jxky h2 a{
+    display: inline;
+}
+.jxky img{
+    height: 120px;
+    line-height: 20px;
+    max-width: 100%;
+    vertical-align: bottom;
+    width: 120px;
+    display: inline;
+    box-sizing: content-box;
+}
+.jxky dl dt{
+    float: left;
+    display: block;
+    box-sizing: content-box;
+    position: static;
+    z-index: auto;
+    width:150px;
+}
+.jxky dl dd a{
+    color: rgb(86, 86, 86);
+    font-family: "Microsoft Yahei", Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 18px;
+}
+.jxky dl dd a h3{
+    color: rgb(86, 86, 86);
+    display: inline;
+
+
+}
+.jxky dl dd:hover a h3{
+    color: #7A0000;
+}
+
+ @keyframes sport {
+            0%   {transform: translateY(80px);opacity: 1;}
+            25%  {transform: translateY(50px);opacity: 1}
+            50%  {transform: translateY(20px);opacity: 1}
+            100% {transform: translateY(0px);opacity: 1}
+        }
+.jxky dl dd p{
+    color: rgb(86, 86, 86);
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    position: static;
+    box-sizing: content-box;
+}
+/*mtbd style*/
+.mtbd{
+    width:568px;
+    height: 163.6px;
+    margin-top: 10px;
+    display: block;
+
+    box-sizing: content-box;
+}
+.mtbd h2{
+    font-size: 18px;
+    font-weight: 400;
+    height:43.6px;
+    line-height: 42px;
+    display: block;
+    position: static;
+    z-index: auto;
+    margin-bottom: 8px;
+    border-bottom: 1.6px solid rgb(140,0,0);
+}
+.mtbd h2 a{
+    display: inline;
+
+}
+.mtbd ul{
+    line-height: 20px;
+    font-weight: 400;
+    list-style-type: none;
+    display: block;
+    box-sizing: content-box;
+    position: static;
+
+}
+.mtbd ul li{
+    display: list-item;
+    position: static;
+    line-height: 18px;
+    margin-bottom: 16px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(86,86,86);
+}
+.mtbd ul li span{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(244, 244, 244);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(140, 0, 0);
+    border-image-repeat: stretch stretch;
+    color: rgb(140, 0, 0);
+    display: block;
+    float: left;
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    margin-right: 24px;
+    text-align: center;
+    width: 120px;
+}
+/*tzgg style*/
+.tzgg{
+    width:568px;
+    height: 200px;
+
+}
+.tzgg h2{
+    color: rgb(40, 40, 40);
+    font-family: "Microsoft Yahei", Arial;
+    font-size: 18px;
+    font-weight: 400;
+    width: 568px;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 8px;
+    box-sizing: content-box;
+    display: block;
+    line-height: 42px;
+    position: static;
+    z-index: auto;
+    border-bottom: 1.6px solid rgb(140,0,0);
+
+}
+.tzgg h2 a{
+    border-left: 2px solid rgb(206, 206, 206);
+}
+.tzgg h2 a:hover{
+    border-left: 2px solid rgb(140, 0, 0);
+}
+.tzgg ul{
+    box-sizing: content-box;
+    display: block;
+    line-height: 20px;
+    position: static;
+    width:568px;
+    z-index: auto;
+    font-size: 12px;
+    list-style-type: none;
+}
+.tzgg ul li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    list-style-type: none;
+    margin-bottom: 18px;
+    overflow: hidden;
+    width: 568px;
+}
+.tzgg ul li span{
+    color: rgb(140, 0, 0);
+    display: block;
+    float: left;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    line-height: 36px;
+    list-style-type: none;
+    margin-right: 18px;
+    width:126px;
+    border-right: 2px solid rgb(206, 206, 206);
+    overflow: hidden;
+    z-index: auto;
+    position: static;
+    box-sizing: content-box;
+
+}
+.tzgg ul li span:hover{
+    border-right: 2px solid rgb(140, 0, 0);
+}
+.tzgg ul li a{
+    width: 422px;
+    box-sizing: content-box;
+    display: block;
+    float: left;
+    text-align: left;
+    line-height: 18px;
+    position: static;
+    overflow: hidden;
+    z-index: auto;
+
+}
+/*conL style end*/
+
+
+/*conR style*/
+.conR{
+    width:450px;
+    height: 613px;
+    float: right;
+}
+.conR dl{
+    font-size: 12px;
+    font-weight: 400;
+    height:175px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    overflow: hidden;
+    box-sizing: content-box;
+    display: block;
+    line-height: 20px;
+    position: static;
+    z-index: auto;
+
+
+}
+.conR dl dt{
+    float: left;
+    height: 125px;
+    padding-top: 48px;
+    text-align: center;
+    width: 94px;
+    box-sizing: content-box;
+    display: block;
+    line-height: 20px;
+    position: static;
+}
+.conR dl dt a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    box-sizing: content-box;
+    display: inline;
+}
+.conR dl dt a img{
+    max-width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    box-sizing: content-box;
+    display: inline;
+    position: static;
+    z-index: auto;
+
+}
+.conR dl dt a span{
+    padding-top: 6px;
+    display: block;
+    box-sizing: content-box;
+    line-height: 20px;
+    width:94px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(50,50,50);
+}
+.conR dl dt a span:hover{
+    color: #7A0000;
+}
+.conR dl dd{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    /*position: relative;*/
+    width: 307px;
+    box-sizing: content-box;
+    display: block;
+    float: left;
+}
+.conR dl dd a{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: static;
+    width: 307px;
+    box-sizing: content-box;
+    display: block;
+}
+.conR dl:nth-of-type(1) dd a{
+    background:url('../images/firstbeijing.jpg') no-repeat center;
+    background-size:cover;
+}
+.conR dl:nth-of-type(2) dd a{
+    background:url('../images/middle.jpg') no-repeat center;
+    background-size:cover;
+}
+.conR dl:nth-of-type(3) dd a{
+    background:url('../images/lastbeijing.jpg') no-repeat center;
+    background-size:cover;
+}
+
+.conR dl dd a img{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+    max-width: 100%;
+    vertical-align: bottom;
+    overflow: hidden;
+    position:static;
+    box-sizing: content-box;
+    display: inline;
+}
+
+
+
+@media(max-width: 1000px) {
+    .conL{
+        text-align: left;
+    }
+
+    .conR{
+    width:250px;
+    height: 613px;
+    text-align: center;
+        float: none;
+}
+    .conR dl dd{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    box-sizing: content-box;
+    display: block;
+
+}
+    /*.conR dl dt{*/
+        /*display: none;*/
+    /*}*/
+    .conR dl dd{
+        width:100px;
+    }
+    .conR dl dd a{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: static;
+    width:100px;
+    box-sizing: content-box;
+    display: block;
+
+}
+       .flexbox.flexwrap div.block2{
+        flex: 1 1 578px;
+
+    }
+    .flexbox.flexwrap div.block3{
+        flex:1 1 200px;
+}
+    div.block3{
+        width:200px;
+    }
+
+}
+@media(max-width: 900px) {
+    .conL{
+        text-align: left;
+        float: none;
+    }
+    .conR{
+    width:250px;
+    height: 613px;
+    text-align: center;
+        float: none;
+}
+    /*.conR dl dt{*/
+        /*display: none;*/
+    /*}*/
+    .conR dl dd{
+        width:400px;
+    }
+    .conR dl dd a{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: static;
+    width:400px;
+    box-sizing: content-box;
+    display: block;
+
+}
+       .flexbox.flexwrap div.block2{
+        flex: 1 1 578px;
+
+    }
+    .flexbox.flexwrap div.block3{
+        flex:1 1 500px;
+}
+    div.block3{
+        width:100%;
+    }
+
+}
+@media(max-width: 650px) {
+    .conL{
+        text-align: left;
+        float: none;
+        transform: scale(0.8);
+    }
+    .conR{
+    width:250px;
+    height: 613px;
+    text-align: center;
+        float: none;
+}
+    /*.conR dl dt{*/
+        /*display: none;*/
+    /*}*/
+    .conR dl dd{
+        width:400px;
+    }
+    .conR dl dd a{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: static;
+    width:400px;
+    box-sizing: content-box;
+    display: block;
+
+}
+       .flexbox.flexwrap div.block2{
+        flex: 1 1 578px;
+
+    }
+    .flexbox.flexwrap div.block3{
+        flex:1 1 500px;
+}
+    div.block3{
+        width:100%;
+    }
+}
+
+@media(max-width: 600px) {
+    .conL{
+        text-align:left;
+        float: none;
+        width: 380px;
+        transform: scale(0.7);
+        display: none;
+    }
+    .conR{
+    width:300px;
+    height: 613px;
+    text-align: center;
+        float: none;
+}
+    /*.conR dl dt{*/
+        /*display: none;*/
+    /*}*/
+    .conR dl dd{
+        width:300px;
+    }
+    .conR dl dd a{
+    font-size: 12px;
+    height: 173px;
+    line-height: 20px;
+    overflow: hidden;
+    position: static;
+    width:300px;
+    box-sizing: content-box;
+    display: block;
+
+}
+       .flexbox.flexwrap div.block2{
+        flex: 1 1 350px;
+
+    }
+    .flexbox.flexwrap div.block3{
+        flex:1 1 350px;
+}
+    div.block3{
+        width:100%;
+    }
+}
+/* small width */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

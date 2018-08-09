@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+ul.header-nav{
+    position: relative;
+}
+.minfoWrap{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(86, 86, 86);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(86, 86, 86);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(86, 86, 86);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(140, 0, 0);
+    border-top-style: solid;
+    border-top-width: 0px;
+    color: rgb(86, 86, 86);
+    display: none;
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    left: 0%;
+    line-height: 20px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 24px;
+    position: absolute;
+    width: 100%;
+    z-index: 4444444444444444444444444;
+    -moz-text-size-adjust: none;
+}
+
+.minfoWrap_inner {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(86, 86, 86);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(86, 86, 86);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(86, 86, 86);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(140, 0, 0);
+    border-top-style: solid;
+    border-top-width: 0px;
+    color: rgb(86, 86, 86);
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    left: 0%;
+    line-height: 20px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 24px;
+    position: absolute;
+    width: 100%;
+    z-index: 4444444444444444444444444;
+}
+
+div.fl{
+    float: left;
+    display: inline;
+    width: 370px;
+    z-index: 4444444444444444444444444;
+
+}
+.f1>img{
+    padding: 0;
+    vertical-align: bottom;
+    display: block;
+    box-sizing: content-box;
+    width:370px;
+    height: 130px;
+    z-index: 4444444444444444444444444;
+    float: left;
+}
+.slogan{
+    display: block;
+    float: left;
+    z-index: 4444444444444444444444444;
+    line-height: 24px;
+    box-sizing: content-box;
+    color: rgb(140, 0, 0);
+    font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+    font-size: 15px;
+    font-weight: 400;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 40px;
+    width: 240px;
+}
+ul.fl{
+    border-bottom-color: rgb(140, 0, 0);
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(140, 0, 0);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(140, 0, 0);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(140, 0, 0);
+border-top-style: none;
+border-top-width: 0px;
+color: rgb(140, 0, 0);
+float: left;
+font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 40px;
+margin-right: 10px;
+margin-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: center;
+width: 240px;
+    display: block;
+    z-index: 4444444444444444444444444;
+}
+ul.fl li a{
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(255, 255, 255);
+background-image: none;
+background-origin: padding-box;
+background-position: 0% 0%;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto auto;
+border-bottom-color: rgb(86, 86, 86);
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(86, 86, 86);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(86, 86, 86);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(86, 86, 86);
+border-top-style: none;
+border-top-width: 0px;
+color: rgb(86, 86, 86);
+display: block;
+font-family: "Arial", "Microsoft Yahei", "Lucida Grande", "Tahoma", "Helvetica", "sans-serif";
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: center;
+text-decoration: none;
+text-decoration-color: rgb(86, 86, 86);
+text-decoration-line: none;
+text-decoration-style: solid;
+transition-duration: 0.3s;
+width: 125px
+}
+ul.fl li a:hover{
+    color: #8f000b;
+}
+@media(max-width: 1000px) {
+    .slogan{
+        display: none;
+    }
+    ul.fl{
+        display: block;
+    }
+}
+
+
+@media(max-width: 850px) {
+    ul.fl{
+        display: none;
+    }
+    .slogan{
+        display: block;
+    }
+}
+@media(max-width: 550px) {
+    ul.fl{
+        display: none;
+    }
+    .slogan{
+        display: block;
+    }
+    .fl img{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

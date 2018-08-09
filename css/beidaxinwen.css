@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #000;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #8f000b;
+    text-decoration: none;
+}
+
+
+h2{
+    border-bottom: 1.6px solid rgb(140,0,0);
+    font-size: 18px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 42px;
+    margin:0 0 8px 0;
+    padding: 0 0 0 0;
+}
+/*section*/
+.section1{
+    width:1000px;
+    overflow: hidden;
+}
+#newsLeft {
+    width: 308px;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    overflow: hidden;
+}
+h3{
+    font-size: 15px;
+    font-family: 微软雅黑;
+    margin-bottom: 5px;
+
+}
+#newsCenter{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 14px;
+    width:317px;
+    float: left;
+
+}
+.newR li{
+    font-size: 14px;
+    height: 40px;
+    line-height: 20px;
+    display: block;
+    list-style-type: none;
+    padding:12px 12px 12px 18px;
+    border-bottom: 1px solid grey;
+}
+#newsRight{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 14px;
+    width:317px;
+    float: left;
+}
+.lastL{
+    width: 185px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+}
+.LastR{
+    display: inline-block;
+    padding-right: 17px;
+    width:80px;
+    float: right;
+}
+.last a{
+    color: #8f000b;
+    text-decoration: none;
+}
+.last a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
